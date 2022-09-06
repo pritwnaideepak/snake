@@ -62,6 +62,9 @@ class Board(val height: Int, val width: Int) {
     }
     // this function is used to show the board
     fun render() {
+        println("Apple X: ${apple.position.x}, Y: ${apple.position.y}")
+        println("Snake X: ${snake.position.x}, Y: ${snake.position.y}")
+
         for (_i in 0..width) print("⬜")
 
         for (row in 0..height - 2) {
